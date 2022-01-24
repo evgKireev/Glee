@@ -1,5 +1,28 @@
-.body {
+html,
+body {
+  height: 100%;
+}
+
+body {
   max-width: 2000px;
   margin: 0 auto;
   padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  @extend %Rubik-Regular-400;
+  color: #7b7b7b;
+  font-size: 14px;
 }
