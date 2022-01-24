@@ -1,5 +1,119 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
-@import 'media';
+  @import 'vars';
+  @import 'fonts';
+  @import 'reset';
+  @import 'global';
+  .header {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 0 54px;
+    }
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    &__text {
+      padding-left: 14px;
+      color: $accent;
+      @extend %Rubik-Medium-500;
+      font-size: 36px;
+      line-height: 58px;
+    }
+  }
+  
+  .menu {
+    &__list {
+      display: flex;
+    }
+    &__list-item+.menu__list-item {
+      padding-left: 35px;
+    }
+    &__list-link {
+      color: $accent;
+      @extend %Rubik-Medium-500;
+      font-size: 15px;
+      line-height: 12px;
+    }
+  }
+  
+  .user-nav {
+    display: flex;
+    &__item {
+      display: flex;
+    }
+    &__link-search {
+      width: 51px;
+      height: 51px;
+      border-radius: 25px;
+      background-color: #a3bbc8;
+      background-color: rgba($color: #a3bbc8, $alpha: 0.2);
+      position: relative;
+    }
+    &__img-search {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+    }
+    &__item {
+      width: 178px;
+      height: 51px;
+      border-radius: 26px;
+      background-color: #fcd7b6;
+      margin: 0 16px;
+      position: relative;
+    }
+    &__item::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      background-color: #ffffff;
+      opacity: 40%;
+      left: 85px;
+      top: 10px;
+    }
+    &__link-shape {
+      position: absolute;
+      top: 23px;
+      left: 40px;
+    }
+    &__link-shops {
+      position: absolute;
+      top: 23px;
+      right: 45px;
+    }
+    &___img-like {
+      position: relative;
+    }
+    &__num {
+      color: #243f4d;
+      @extend %DMSans-Regular-400;
+      font-size: 10px;
+      ;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      text-align: center;
+      line-height: 16px;
+    }
+    &__link-eleps {
+      width: 51px;
+      height: 51px;
+      border-radius: 25px;
+      background-color: #a3bbc8;
+      position: relative;
+    }
+    &__img-elips {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+  
+  @import 'media';
