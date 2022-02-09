@@ -7,4 +7,9 @@ $(function() {
 
   })
 
+  var mixer = mixitup('.product__itams');
+
+
+  var mixer = mixitup('.new-product__items');
+
 });
