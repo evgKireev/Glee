@@ -156,6 +156,7 @@
                                     display: block;
                                     margin-bottom: 15px;
                                     line-height: 32px;
+                                    width: 120px;
                                   }
                                   &__title {
                                     color: #1f2044;
@@ -335,9 +336,7 @@
                                 }
                                 
                                 .block-video {
-                                  &__fon {
-                                    max-height: 500px;
-                                  }
+                                  max-height: 500px;
                                   background-image: url(..//images/fonvideo.jpg);
                                   height: 500px;
                                   width: 100%;
@@ -423,6 +422,8 @@
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    cursor: pointer;
+                                    border: none;
                                     &:hover {
                                       background-color: #a3bbc8;
                                     }
