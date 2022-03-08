@@ -1,6 +1,14 @@
 $accent: #436372;
 $bg:#fcd7b6;
 $bg2:#edf1f4;
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 %DMSans-Bold-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
