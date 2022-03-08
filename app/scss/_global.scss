@@ -82,3 +82,38 @@
       color: #243f4d;
       @extend%Rubik-Regular-400;
     }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__list {
+        display: flex;
+        align-items: center;
+      }
+      &__item {
+        background-color: #ffffff;
+        border: 1px solid #a3bbc8;
+        margin-right: 15px;
+      }
+      &__link {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        @extend%Rubik-Regular-400;
+        display: flex;
+        padding: 19px 23px;
+      }
+      &__next {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        @extend%Rubik-Regular-400;
+        background-color: #ffffff;
+        border: 1px solid #a3bbc8;
+        padding: 19px;
+      }
+      &__item--activ {
+        background-color: #a3bbc8;
+      }
+    }
