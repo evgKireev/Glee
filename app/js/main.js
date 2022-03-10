@@ -9,6 +9,15 @@ $(function() {
   });
 
 
+  $('.product-2-content__star').rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "12px"
+  });
+
+
 
   $(".filter-price__input").ionRangeSlider({
     type: "double",
