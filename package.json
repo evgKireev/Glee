@@ -8,6 +8,7 @@
     "imagemin": "^8.0.1",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
+    "jquery-form-styler": "^2.0.2",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
