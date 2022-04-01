@@ -1474,4 +1474,112 @@
                                   }
                                 }
                                 
+                                .blog {
+                                  padding: 120px 0;
+                                  &__inner {
+                                    display: flex;
+                                    justify-content: space-between;
+                                  }
+                                  &__content {
+                                    width: 870px;
+                                    margin-right: 15px;
+                                  }
+                                  &__item {
+                                    margin-bottom: 75px;
+                                  }
+                                  &__aside {
+                                    width: 270px;
+                                  }
+                                }
+                                
+                                .blog-search {
+                                  margin-bottom: 60px;
+                                  &__form {
+                                    display: flex;
+                                    align-items: center;
+                                  }
+                                  &__input {
+                                    border-radius: 5px;
+                                    background-color: transparent;
+                                    border: 1px solid #eef2f5;
+                                    padding: 0;
+                                    width: 225px;
+                                    height: 43px;
+                                    border-right: none;
+                                    padding: 0 10px;
+                                  }
+                                  &__button {
+                                    border-radius: 5px;
+                                    background-color: #eef2f5;
+                                    border: none;
+                                    padding: 13px 16px;
+                                    cursor: pointer;
+                                    margin-left: -5px;
+                                  }
+                                }
+                                
+                                .blog-recent {
+                                  &__content {
+                                    display: flex;
+                                    margin-bottom: 22px;
+                                  }
+                                  &__img {
+                                    width: 70px;
+                                    height: 70;
+                                    margin-right: 20px;
+                                  }
+                                  &__title {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #333333;
+                                    @extend%Rubik-Regular-400;
+                                    margin-bottom: 10px;
+                                  }
+                                  &__data {
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                    color: #9a9a9a;
+                                    padding-left: 20px;
+                                    position: relative;
+                                    &::before {
+                                      content: '';
+                                      position: absolute;
+                                      background-image: url(..//images/blog/calendar-days-solid.svg);
+                                      top: 7px;
+                                      left: 0;
+                                      width: 12px;
+                                      height: 12px;
+                                    }
+                                  }
+                                }
+                                
+                                .blog-item {
+                                  &__img {
+                                    width: 830px;
+                                    height: 500px;
+                                    object-fit: cover;
+                                    margin-bottom: 40px;
+                                  }
+                                  &__title {
+                                    font-size: 36px;
+                                    line-height: 26px;
+                                    color: #333333;
+                                    @extend%Rubik-Regular-400;
+                                    margin-bottom: 25px;
+                                  }
+                                  &__text {
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    color: #243f4d;
+                                    @extend%Rubik-Regular-400;
+                                    margin-bottom: 50px;
+                                    width: 830px;
+                                  }
+                                }
+                                
+                                .blog__pagination {
+                                  justify-content: flex-start;
+                                  margin-top: 25px;
+                                }
+                                
                                 @import 'media';
