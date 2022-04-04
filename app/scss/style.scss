@@ -1882,4 +1882,139 @@
                                   }
                                 }
                                 
+                                .contact {
+                                  padding: 115px 0 15px;
+                                  &__subtitle {
+                                    font-size: 16px;
+                                    text-align: center;
+                                    color: #a3bbc8;
+                                    @extend%Rubik-Medium-500
+                                  }
+                                  &__title {
+                                    font-size: 35px;
+                                    line-height: 57px;
+                                    color: #436372;
+                                    text-align: center;
+                                    @extend%Rubik-Medium-500;
+                                    margin-bottom: 65px;
+                                  }
+                                  &__inner {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: 120px;
+                                  }
+                                  &__item {
+                                    width: 370px;
+                                    height: 382px;
+                                    padding: 65px 53px 75px;
+                                    background-color: #fbfbfb;
+                                    &:hover {
+                                      border: 2px solid #a3bbc8;
+                                      .contact__item-img {
+                                        background-color: #a3bbc8;
+                                        &::before {
+                                          content: '';
+                                          position: absolute;
+                                          width: 31px;
+                                          height: 44px;
+                                          top: 15px;
+                                          left: 22px;
+                                          background-image: url(..//images/icons/adres-fill.svg);
+                                        }
+                                      }
+                                      .contact__item-img--adres::before {
+                                        content: '';
+                                        position: absolute;
+                                        background-image: url(..//images/icons/mail-fill.svg);
+                                        width: 37px;
+                                        height: 35px;
+                                        top: 15px;
+                                        left: 22px;
+                                      }
+                                      .contact__item-img--phone::before {
+                                        content: '';
+                                        position: absolute;
+                                        background-image: url(..//images/icons/phone-fill.svg);
+                                        width: 37px;
+                                        height: 44px;
+                                        left: 20px;
+                                        ;
+                                        top: 15px;
+                                      }
+                                    }
+                                  }
+                                  &__item-img {
+                                    margin: 0 auto;
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 20px;
+                                    box-shadow: 0px 6px 28.5px rgba(37, 37, 37, 0.05);
+                                    background-color: #fff;
+                                    margin-bottom: 60px;
+                                    position: relative;
+                                    &::before {
+                                      content: '';
+                                      position: absolute;
+                                      width: 31px;
+                                      height: 44px;
+                                      top: 15px;
+                                      left: 22px;
+                                      background-image: url(..//images/icons/adres.svg);
+                                    }
+                                  }
+                                  &__item-img--adres::before {
+                                    background-image: url(..//images/icons/mail.svg);
+                                    width: 37px;
+                                    height: 35px;
+                                  }
+                                  &__item-img--phone::before {
+                                    background-image: url(..//images/icons/phone.svg);
+                                    width: 37px;
+                                    height: 44px;
+                                    left: 20px;
+                                  }
+                                  &__item-title {
+                                    font-size: 20px;
+                                    @extend%DMSans-Bold-700;
+                                    color: #222222;
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                  }
+                                  &__item-text {
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    color: #565872;
+                                    @extend%Rubik-Regular-400;
+                                    text-align: center;
+                                  }
+                                  &__wrapper {
+                                    display: flex;
+                                  }
+                                  &__wrapper-form {
+                                    max-width: 622px;
+                                    margin-right: 50px;
+                                    .comments-form__name,
+                                    .comments-form__mail {
+                                      width: 300px;
+                                      height: 50px;
+                                      background-color: #f5f5f5;
+                                      margin-right: 20px;
+                                    }
+                                    .comments-form__comment {
+                                      background-color: #f5f5f5;
+                                    }
+                                    .comments-form__castom-input::before {
+                                      right: 40px;
+                                    }
+                                    .comments-form__castom-input-mail::before {
+                                      right: 40px;
+                                    }
+                                  }
+                                }
+                                
+                                #map {
+                                  width: 500px;
+                                  height: 335px;
+                                }
+                                
                                 @import 'media';
